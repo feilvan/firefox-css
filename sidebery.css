@@ -1,0 +1,67 @@
+#root {
+  --tabs-font: 10pt Inter;
+  --tabs-count-font: 0.625rem Inter;
+  --bookmarks-bookmark-font: 0.875rem Inter;
+  --bookmarks-folder-font: 10pt Inter;
+
+  --toolbar-bg: #101313 !important;
+  --s-frame-bg: #101313;
+  --active-el-bg: #202020 !important;
+
+  --tabs-indent: 16px;
+  --tabs-height: 28px;
+  --tabs-inner-gap: 6px;
+  --tabs-border-radius: 4px;
+  --tabs-margin: 4px;
+  --nav-btn-margin: 8px;
+}
+
+/* Adjust styles according to sidebar width */
+@media screen and (max-width: 44px) {
+  #root {
+    --tabs-indent: unset;
+  }
+  .Tab .audio {
+    left: 10px;
+    transform: scale(0.8);
+    transform: translateY(4px);
+    z-index: 99 !important;
+  }
+  .Tab .title {
+    visibility: collapse;
+  }
+  .Tab .audio-icon {
+    visibility: collapse;
+  }
+  .BottomBar {
+    visibility: collapse;
+  }
+  .new-tab-btns {
+    visibility: collapse;
+  }
+  #root[data-tabs-tree-lvl-marks="true"]
+    .Tab[data-pin="false"]:not([data-lvl="0"])
+    .body:after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 44px) {
+  .Tab .audio {
+    left: 28px;
+  }
+}
+
+.Tab {
+  margin: 0 8px;
+  width: unset;
+}
+
+.nav-item {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.Tab[data-pin="false"] .fav {
+  margin: 0 var(--tabs-inner-gap) 0 var(--tabs-inner-gap);
+}
