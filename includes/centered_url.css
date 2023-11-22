@@ -1,0 +1,3 @@
+#urlbar-input:not([aria-expanded="true"]) {
+  text-align: center !important;
+}

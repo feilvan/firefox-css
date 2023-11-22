@@ -1,0 +1,20 @@
+/* rounded identity box */
+#identity-box[pageproxystate="valid"].notSecureText > .identity-box-button,
+#identity-box[pageproxystate="valid"].chromeUI > .identity-box-button,
+#identity-box[pageproxystate="valid"].extensionPage > .identity-box-button,
+#urlbar-label-box {
+  border-radius: 999px !important;
+}
+
+#urlbar:not([open]) > #urlbar-background,
+.identity-box-button,
+#tracking-protection-icon-container,
+.urlbar-page-action,
+#urlbar-go-button,
+.search-go-button {
+  border-radius: 999px !important;
+}
+
+#urlbar[open] > #urlbar-background {
+  border-radius: 0 0 8px 8px !important;
+}
