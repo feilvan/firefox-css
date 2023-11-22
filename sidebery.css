@@ -65,3 +65,19 @@
 .Tab[data-pin="false"] .fav {
   margin: 0 var(--tabs-inner-gap) 0 var(--tabs-inner-gap);
 }
+
+.NavigationBar.-top {
+  padding: 0 var(--nav-btn-margin);
+}
+
+/* Pinned tab */
+
+#root[data-pinned-tabs-position="panel"] .PinnedTabsBar {
+  padding: 0 var(--nav-btn-margin) var(--tabs-margin);
+}
+
+.Tab[data-pin="true"] .audio {
+  top: 12px !important;
+  left: 12px !important;
+  background-color: transparent !important;
+}
