@@ -1,6 +1,5 @@
-## Preview
 
-https://github.com/feilvan/firefox-css/assets/73324192/d90a9e97-28d9-409c-a35f-7b8f2d7b398d
+[preview.webm](https://github.com/feilvan/firefox-css/assets/73324192/c66d6bc9-07be-40b9-859f-db3191f19ff3)
 
 ## Features
 
