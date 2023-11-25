@@ -1,23 +1,42 @@
-/* rounded corner like arc browser */
+/* rounded corner + gap like arc browser */
 
-#appcontent
-  > #tabbrowser-tabbox
-  > #tabbrowser-tabpanels
-  > .deck-selected
-  > .browserContainer
-  > .browserStack {
-  background: var(--uc-base-colour) !important;
+html#main-window body hbox#browser {
+  background: var(--lwt-frame) !important;
 }
 
-#appcontent
-  > #tabbrowser-tabbox
-  > #tabbrowser-tabpanels
-  > .deck-selected
-  > .browserContainer
-  > .browserStack
-  > browser {
+html#main-window body hbox#browser vbox#appcontent {
+  margin: 0 8px 8px 0 !important;
+  overflow: hidden !important;
+}
+
+html#main-window body hbox#browser vbox#appcontent tabbox#tabbrowser-tabbox {
   border-radius: 8px !important;
-  margin: 0 6px 6px 0 !important;
-  outline: 3px solid var(--uc-base-colour) !important;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important; */
+}
+
+html#main-window
+  body
+  hbox#browser
+  vbox#appcontent
+  tabbox#tabbrowser-tabbox
+  tabpanels#tabbrowser-tabpanels
+  hbox.browserSidebarContainer.deck-selected
+  vbox.browserContainer
+  stack.browserStack
+  browser {
+  border-radius: 8px !important;
+  outline: 4px solid var(--lwt-frame) !important;
+}
+
+html#main-window
+  body
+  hbox#browser
+  vbox#appcontent
+  tabbox#tabbrowser-tabbox
+  tabpanels#tabbrowser-tabpanels
+  hbox.browserSidebarContainer.deck-selected {
+  border-radius: 8px !important;
+}
+
+.devtools-toolbox-side-iframe {
+  z-index: 1 !important;
 }
