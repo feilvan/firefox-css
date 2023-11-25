@@ -72,6 +72,8 @@
   --urlbar-box-hover-bgcolor: var(--uc-highlight-colour) !important;
   --urlbar-box-hover-text-color: var(--uc-inverted-colour) !important;
   --urlbar-box-focus-bgcolor: var(--uc-highlight-colour) !important;
+
+  --tabpanel-background-color: var(--lwt-frame) !important;
 }
 
 .identity-color-blue {
