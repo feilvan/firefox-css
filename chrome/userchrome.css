@@ -14,3 +14,6 @@
 /* @import "includes/centered_statuspanel.css"; */
 /* @import "includes/reduce_urlbar_height.css"; */
 /* @import "includes/autohide_navbar_buttons.css"; */
+
+/* Disable autohide_bookmarks_toolbar.css to use this */
+/* @import "includes/autohide_bookmarks_and_main_toolbars.css"; */
