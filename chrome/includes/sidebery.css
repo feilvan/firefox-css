@@ -37,3 +37,25 @@ See the above repository for updates as well as full license text. */
   min-width: var(--uc-sidebar-hover-width) !important;
   transition-delay: 0ms !important;
 }
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]
+  ~ #appcontent
+  > #tabbrowser-tabbox {
+  transition: transform 115ms linear 100ms !important;
+  will-change: transform;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:hover
+  ~ #appcontent
+  > #tabbrowser-tabbox {
+  transform: translateX(210px) !important;
+}
+
+#navigator-toolbox + #browser {
+  transition: transform 115ms linear 100ms !important;
+  will-change: transform;
+}
+
+#navigator-toolbox:hover + #browser {
+  transform: translateY(70px) !important;
+}
