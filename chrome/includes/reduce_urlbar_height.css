@@ -17,3 +17,7 @@ toolbaritem#urlbar-container.chromeclass-location hbox#urlbar {
 :root {
   --toolbar-field-background-color: var(--lwt-frame) !important;
 }
+
+:root[tabsintitlebar] #toolbar-menubar[autohide="true"] #main-menubar {
+  flex-grow: 0 !important;
+}
