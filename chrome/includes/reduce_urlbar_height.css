@@ -1,0 +1,19 @@
+/* reduce url bar height */
+
+toolbaritem#urlbar-container.chromeclass-location {
+  --urlbar-container-height: 28px !important;
+}
+
+toolbaritem#urlbar-container.chromeclass-location hbox#urlbar {
+  --urlbar-height: 28px !important;
+  --urlbar-toolbar-height: 28px !important;
+}
+
+#urlbar,
+#searchbar {
+  min-height: 0 !important;
+}
+
+:root {
+  --toolbar-field-background-color: var(--lwt-frame) !important;
+}
