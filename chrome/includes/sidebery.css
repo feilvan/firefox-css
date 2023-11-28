@@ -55,7 +55,3 @@ See the above repository for updates as well as full license text. */
   transition: transform 115ms linear 100ms !important;
   will-change: transform;
 }
-
-#navigator-toolbox:hover + #browser {
-  transform: translateY(70px) !important;
-}
