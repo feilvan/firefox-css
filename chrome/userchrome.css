@@ -2,7 +2,6 @@
 @import "includes/font.css";
 @import "includes/remove_window_control_button.css";
 @import "includes/autohide_bookmarks_toolbar.css";
-/* @import "includes/centered_statuspanel.css"; */
 @import "includes/hide_tabs_toolbar.css";
 @import "includes/compact_proton.css";
 @import "includes/sidebery.css";
@@ -10,3 +9,8 @@
 @import "includes/centered_url.css";
 @import "includes/rounded_browser_corner.css";
 @import "includes/floating_statuspanel.css";
+
+/* Below is disabled because it looks ugly but I personally use some */
+/* @import "includes/centered_statuspanel.css"; */
+/* @import "includes/reduce_urlbar_height.css"; */
+/* @import "includes/autohide_navbar_buttons.css"; */
