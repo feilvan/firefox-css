@@ -1,0 +1,56 @@
+/* autohide every button in navbar */
+
+toolbox#navigator-toolbox toolbar#nav-bar.browser-toolbar {
+  position: relative !important;
+
+  hbox#nav-bar-customization-target.customization-target {
+    toolbarbutton {
+      transition: opacity 135ms linear 100ms !important;
+      opacity: 0 !important;
+    }
+
+    toolbaritem#urlbar-container.chromeclass-location
+      hbox#urlbar
+      hbox#urlbar-input-container {
+      box,
+      hbox {
+        transition: opacity 135ms linear 100ms !important;
+        opacity: 0 !important;
+      }
+    }
+  }
+
+  toolbaritem#PanelUI-button
+    toolbarbutton#PanelUI-menu-button.toolbarbutton-1:not([open="true"]) {
+    transition: opacity 135ms linear 100ms !important;
+    opacity: 0 !important;
+  }
+}
+
+toolbox#navigator-toolbox:is(:hover, :focus-within)
+  toolbar#nav-bar.browser-toolbar {
+  hbox#nav-bar-customization-target.customization-target {
+    transition-delay: 100ms !important;
+
+    toolbarbutton:not([disabled="true"]) {
+      opacity: 1 !important;
+    }
+
+    toolbarbutton:is([disabled="true"]) {
+      opacity: 0.4 !important;
+    }
+
+    toolbaritem#urlbar-container.chromeclass-location
+      hbox#urlbar
+      hbox#urlbar-input-container {
+      box,
+      hbox {
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  toolbaritem#PanelUI-button toolbarbutton#PanelUI-menu-button.toolbarbutton-1 {
+    opacity: 1 !important;
+  }
+}
