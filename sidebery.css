@@ -14,6 +14,9 @@
   --tabs-border-radius: 4px;
   --tabs-margin: 4px;
   --nav-btn-margin: 6px;
+
+  --tabs-pinned-width: 28px;
+  --tabs-pinned-height: 28px;
 }
 
 /* Adjust styles according to sidebar width */
