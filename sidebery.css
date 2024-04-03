@@ -1,12 +1,8 @@
 #root {
-  --tabs-font: 10pt Inter;
-  --tabs-count-font: 0.625rem Inter;
-  --bookmarks-bookmark-font: 0.875rem Inter;
-  --bookmarks-folder-font: 10pt Inter;
-
-  --toolbar-bg: #101313 !important;
-  --s-frame-bg: #101313;
-  --active-el-bg: #202020 !important;
+  --tabs-font: 10pt Inter, sans-serif;
+  --tabs-count-font: 0.625rem Inter, sans-serif;
+  --bookmarks-bookmark-font: 0.875rem Inter, sans-serif;
+  --bookmarks-folder-font: 10pt Inter, sans-serif;
 
   --tabs-indent: 16px;
   --tabs-height: 28px;
@@ -17,6 +13,21 @@
 
   --tabs-pinned-width: 28px;
   --tabs-pinned-height: 28px;
+}
+
+@media (prefers-color-scheme: dark) {
+  #root {
+    --toolbar-bg: #101313 !important;
+    --s-frame-bg: #101313;
+    --active-el-bg: #202020 !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #root {
+    --toolbar-bg: #fafafc !important;
+    --s-frame-bg: #fafafc;
+  }
 }
 
 /* Adjust styles according to sidebar width */

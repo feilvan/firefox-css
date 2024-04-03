@@ -10,14 +10,39 @@ See the above repository for updates as well as full license text. */
 /* The border controlling sidebar width will be removed so you'll need to modify these values to change width */
 
 #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
-  --uc-sidebar-width: 40px !important;
+  --uc-sidebar-width: 8px !important;
   --uc-sidebar-hover-width: 250px;
   --uc-autohide-sidebar-delay: 100ms; /* Wait 0.3s before hiding sidebar */
-  position: relative;
+  --uc-tweak-rounded-corners-shadow: 0 -0.8px 0 0 rgb(0 0 0 / 0.02),
+    0 0.5px 1px 1px rgb(0 0 0 / 0.06), 0 1px 1px rgb(0 0 0 / 0.1);
+  position: absolute;
   min-width: var(--uc-sidebar-width) !important;
   width: var(--uc-sidebar-width) !important;
   max-width: var(--uc-sidebar-width) !important;
-  z-index: 1;
+  z-index: 10;
+  height: 50%;
+  align-self: center;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  height: calc(100% + 16px);
+  background-color: var(--uc-base-colour);
+  z-index: -1;
+  border-radius: 0 8px 8px 0;
+  /* soft box shadow */
+  box-shadow: var(--uc-tweak-rounded-corners-shadow);
+  transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
+  min-width: var(--uc-sidebar-width) !important;
+  will-change: min-width;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:hover::after {
+  min-width: var(--uc-sidebar-hover-width) !important;
+  transition-delay: 0ms !important;
 }
 
 #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]
@@ -37,7 +62,7 @@ See the above repository for updates as well as full license text. */
   min-width: var(--uc-sidebar-hover-width) !important;
   transition-delay: 0ms !important;
 }
-
+/* 
 #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]
   ~ #appcontent
   > #tabbrowser-tabbox {
@@ -54,4 +79,4 @@ See the above repository for updates as well as full license text. */
 #navigator-toolbox + #browser {
   transition: transform 115ms linear 100ms !important;
   will-change: transform;
-}
+} */

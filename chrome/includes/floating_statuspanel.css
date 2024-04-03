@@ -1,5 +1,6 @@
 #statuspanel-label {
   background: var(--lwt-frame) !important;
+  color: var(--lwt-text-color) !important;
   border-radius: 6px;
   margin: 0 0 4px 4px !important;
   padding: 4px 8px !important;
